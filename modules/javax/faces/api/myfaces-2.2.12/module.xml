@@ -1,0 +1,17 @@
+<module xmlns="urn:jboss:module:1.8" name="javax.faces.api:myfaces-2.2.12">
+    <dependencies>
+        <module name="com.sun.jsf-impl:myfaces-2.2.12"/>
+        <module name="javax.enterprise.api" export="true"/>
+        <module name="javax.servlet.api" export="true"/>
+        <module name="javax.servlet.jsp.api" export="true"/>
+        <module name="javax.servlet.jstl.api" export="true"/>
+        <module name="javax.validation.api" export="true"/>
+        <module name="org.glassfish.javax.el" export="true"/>
+        <module name="javax.api"/>
+        <module name="javax.websocket.api"/>
+    </dependencies>
+
+    <resources>
+        <resource-root path="myfaces-api-2.2.12.jar"/>
+    </resources>
+</module>
