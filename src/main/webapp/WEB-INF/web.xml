@@ -5,9 +5,41 @@
 		 http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
 
+    <!--
     <context-param>
         <param-name>org.apache.myfaces.USE_ENCRYPTION</param-name>
         <param-value>false</param-value>
+    </context-param>
+    -->
+
+    <context-param>
+        <param-name>org.apache.myfaces.ALGORITHM</param-name>
+        <param-value>AES</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>org.apache.myfaces.ALGORITHM.PARAMETERS</param-name>
+        <param-value>CBC/PKCS5Padding</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>org.apache.myfaces.ALGORITHM.IV</param-name>
+        <param-value>NzY1NDMyMTA3NjU0MzIxMA==</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>org.apache.myfaces.MAC_ALGORITHM</param-name>
+        <param-value>HmacSHA1</param-value>
+     </context-param>
+
+     <context-param>
+        <param-name>org.apache.myfaces.SECRET</param-name>
+        <param-value>MDEyMzQ1Njc4OTAxMjM0NTY3ODkwMTIz</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>org.apache.myfaces.MAC_SECRET</param-name>
+        <param-value>YWJjZDEyMzQ=</param-value>
     </context-param>
 
     <servlet>
